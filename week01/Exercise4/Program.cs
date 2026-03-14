@@ -9,8 +9,8 @@ class Program
 
         List<int> numbers = new List<int>();
         int input = 0;
-        int sum = 0;
-        int biggestNumber = 0;
+        float sum = 0;
+        
 
         Console.WriteLine("Enter a list of numbers, type 0 when finished.");
 
@@ -28,6 +28,9 @@ class Program
             { }
         } while (input != 0);
 
+
+        int biggestNumber = numbers[0];
+
         foreach (int number in numbers)
         {
             sum += number;
@@ -41,7 +44,7 @@ class Program
             }
         }
 
-        float average = sum / numbers.Count;
+        float average = (float)sum / numbers.Count;
 
         Console.WriteLine($"The sum is: {sum}");
         Console.WriteLine($"The average is: {average}");
