@@ -1,6 +1,7 @@
+using System;
+using System.Collections.Generic;
 
-
-public class Prompt
+public class PromptGenerator
 {
     public List<string> _prompts = new List<string>()
     {
@@ -12,11 +13,10 @@ public class Prompt
     };
     
 
-    public void DisplayPrompt()
+    public string GetRandomPrompt()
     {
-        foreach (string prompt in _prompts)
-        {
-            Console.WriteLine($"{prompt}");
-        }
+        Random random = new Random();
+        int randomPrompt = random.Next(0, _prompts.Count);
+        return _prompts[randomPrompt];
     }
 }
