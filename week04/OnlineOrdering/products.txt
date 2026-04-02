@@ -1,0 +1,6 @@
+Bread, 0012, 2.50, 5 
+Eggs, 0103, 4.25, 3 
+Milk, 0342, 2.75, 4
+Ground Beef, 7201, 6.15, 2
+Paper Towels, 6632, 5.00, 1
+Lettuce, 2827, 3.25, 3
