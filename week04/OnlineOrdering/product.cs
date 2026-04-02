@@ -2,6 +2,7 @@ using System.Collections.Generic;
 
 public class Product 
 {
+    
     private string _name;
     private int _productId;
     private double _price;

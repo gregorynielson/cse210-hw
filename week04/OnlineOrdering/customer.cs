@@ -20,21 +20,5 @@ public class Customer
 
     
 
-    // public void SetAddress()
-    // {
-    //     Address address = new Address();
-    //     _address = address.CreateAddress();
-    // }
-
-    // public string GetAddress()
-    // {
-    //     SetAddress();
-    //     return _address;
-    // }
-
-    // public bool InUsa()
-    // {
-    //     // call method from address class
-    //     // if loop to return true and false
-    // }
+    
 }

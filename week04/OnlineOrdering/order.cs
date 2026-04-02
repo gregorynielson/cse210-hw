@@ -28,7 +28,7 @@ public class Order
     {
         Console.WriteLine("");
         Console.WriteLine("--Packing List--");
-        // for each item in list:
+        
         if (_orderNum == 1)
         {
             _products = GetOrderProduct(0, 2, 4);

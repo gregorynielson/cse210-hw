@@ -22,6 +22,7 @@ public class Comment
         _commentNum = _video.GetNumberOfComments();
         return _commentNum;
     }
+    
 
     public void CommentForVideo()
     {

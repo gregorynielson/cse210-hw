@@ -34,6 +34,7 @@ public class Video
             _outputFile.WriteLine($"{_author} - {_title}: {_length} seconds | {_commentNum} comments.");
         }
     }
+    
 
     public int GetNumberOfComments()
     {
