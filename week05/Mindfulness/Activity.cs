@@ -2,8 +2,8 @@
 
 public class Activity
 {
-    protected string _name;
-    protected string _description;
+    private string _name;
+    private string _description;
     protected int _duration;
 
     public Activity(string name, string description)
@@ -23,12 +23,14 @@ public class Activity
         {
             Console.WriteLine("This activity will run for 30 seconds");
             _duration = 30;
-        }else {
+        }
+        else
+        {
             Console.Write("How long in seconds do you want to run this activity: ");
             string duration = Console.ReadLine();
             _duration = int.Parse(duration);
         }
-        
+
         Console.WriteLine("");
         Console.Write("Prepare to begin");
         ShowDots();
@@ -49,7 +51,7 @@ public class Activity
 
     public void ShowDots()
     {
-        
+
         for (int i = 3; i > 0; i--)
         {
             Console.Write(".");
@@ -60,6 +62,37 @@ public class Activity
             Thread.Sleep(300);
             Console.Write("\b\b\b   \b\b\b");
             Thread.Sleep(300);
+        }
+    }
+
+    public void ShowSpinner()
+    {
+        for (int i = 3; i > 0; i--)
+        {
+            Console.Write("|");
+            Thread.Sleep(300);
+            Console.Write("\b \b");
+            Console.Write("/");
+            Thread.Sleep(300);
+            Console.Write("\b \b");
+            Console.Write("-");
+            Thread.Sleep(300);
+            Console.Write("\b \b");
+            Console.Write("\\");
+            Thread.Sleep(300);
+            Console.Write("\b \b");
+            Console.Write("|");
+            Thread.Sleep(300);
+            Console.Write("\b \b");
+            Console.Write("/");
+            Thread.Sleep(300);
+            Console.Write("\b \b");
+            Console.Write("-");
+            Thread.Sleep(300);
+            Console.Write("\b \b");
+            Console.Write("\\");
+            Thread.Sleep(300);
+            Console.Write("\b \b");
         }
     }
 }

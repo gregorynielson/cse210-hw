@@ -13,14 +13,14 @@ public class ReflectionActivity : Activity
 
     private List<string> _questions = new List<string>()
     {
-        "What makes this experience special?",
-        "How did this experience make you feel?",
-        "Did you get any recognition for doing this?",
-        "Did anyone know you were doing this?",
-        "Would you do this again?",
-        "Why did you do this in the first place?",
-        "Would you have done anything different?",
-        "How have you been blessed from this experience?"
+        "What makes this experience special? ",
+        "How did this experience make you feel? ",
+        "Did you get any recognition for doing this? ",
+        "Did anyone know you were doing this? ",
+        "Would you do this again? ",
+        "Why did you do this in the first place? ",
+        "Would you have done anything different? ",
+        "How have you been blessed from this experience? "
     };
 
     private List<int> _usedQuestions = new List<int>()
@@ -77,8 +77,7 @@ public class ReflectionActivity : Activity
         {
             Console.WriteLine("");
             DisplayRandomQuestion();
-            ShowDots();
-            ShowDots();
+            ShowSpinner();
         }
 
         

@@ -28,6 +28,7 @@ class Program
             {
                 BreathingActivity breathe1 = new BreathingActivity("Breathing", "This helps you calm down and relax by focusing on nothing but taking deep breaths.");
                 breathe1.DisplayStartingMessage();
+                breathe1.ShowSpinner();
                 breathe1.RunBreathing();
                 breathe1.DisplayEndingMessage("Breathing");
             }
