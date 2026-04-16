@@ -2,7 +2,7 @@
 
 public class SimpleGoal : Goal 
 {
-    private bool _isComplete;
+    private bool _isComplete = false;
 
     public SimpleGoal(string name, string description, string points) : base(name, description, points)
     {
@@ -11,16 +11,23 @@ public class SimpleGoal : Goal
 
     public override void RecordEvent()
     {
-        Console.WriteLine("simple goal record event");
+        _isComplete = true;
+
     }
 
     public override bool IsComplete()
     {
-        return base.IsComplete();
+        
+        return _isComplete;
     }
 
     public override string GetStringRepresentation()
     {
-        return base.GetStringRepresentation();
+        return $"simple|{_shortName}|{_description}|{_points}|{_isComplete}";
+    }
+
+    public void SetIsComplete(bool complete)
+    {
+        _isComplete = complete;
     }
 }

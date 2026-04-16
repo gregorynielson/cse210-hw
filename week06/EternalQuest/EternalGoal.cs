@@ -10,16 +10,16 @@ public class EternalGoal : Goal
 
     public override void RecordEvent()
     {
-        base.RecordEvent();
+        
     }
 
     public override bool IsComplete()
     {
-        return base.IsComplete();
+        return false;
     }
 
     public override string GetStringRepresentation()
     {
-        return base.GetStringRepresentation();
+        return $"eternal|{_shortName}|{_description}|{_points}";
     }
 }
